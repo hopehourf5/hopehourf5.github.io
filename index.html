@@ -95,12 +95,68 @@
     text-transform: uppercase;
     border-radius: 30px;
     white-space: nowrap;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
 }
 
-.founder-text {
-    text-align: center;
+.founder-text h2 {
+    font-size: clamp(2.2rem, 5vw, 3.2rem);
+    color: #0b3c26;
+    margin: 0;
+    font-weight: 800;
 }
+
+.founder-text .founder-title {
+    font-size: 1.2rem;
+    color: #555555;
+    font-weight: 500;
+    margin: 6px 0 30px 0;
+}
+
+.biography-body .lead-text {
+    font-size: 1.25rem;
+    line-height: 1.8;
+    color: #0b3c26;
+    font-weight: 500;
+}
+
+.biography-body p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #3d3d3d;
+    margin-bottom: 24px;
+}
+
+.biography-body blockquote {
+    font-style: italic;
+    font-size: 1.3rem;
+    color: #0b3c26;
+    border-left: 4px solid #e5b842;
+    padding: 10px 0 10px 20px;
+    margin: 30px 0;
+    font-weight: 600;
+    line-height: 1.5;
+    text-align: left;
+}
+
+@media (min-width: 850px) {
+    .founder-content {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 80px;
+    }
+    .founder-text {
+        text-align: left;
+    }
+    .biography-body p {
+        text-align: justify;
+    }
+}
+</style>
+</head>
+
+}
+
 
 .founder-text .eyebrow {
     font-size: 0.85rem;
